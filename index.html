@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_corazón.svg/1200px-Heart_corazón.svg.png"
+    type="image/x-icon">
+ 
+</head>
+<article class="ola">
+<body class="body">
+    <h1 class="body_title">Del 1 al 10, ¿Cuánto me quieres?</h1>
+    <figure class="micos">
+    <img src="img/SyA.png" alt="" class="body_img">
+    </figure>
+    <button id="yes" class="boton">Hasta el infinito y más allá</button>
+    <button id="no" class="boton">Dick</button>
+</article>
+
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const Yotambien = () => {
+            alert('Yo tambien te quiero mucho Ratoncito');
+            alert('Muy pronto en canada mi amor, Te amo👩🏻‍🤝‍🧑🏽');
+            location.href = 'https://youtu.be/U28pYrR8TI0';
+        }
+
+        const evitarNo = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        }
+        
+
+        vutonSi.addEventListener('click', Yotambien);
+        vutonNo.addEventListener('mouseover', evitarNo);
+    </script>
+</body>
+</html>
